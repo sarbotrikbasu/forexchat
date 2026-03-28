@@ -8,6 +8,7 @@ app = FastAPI(
     title="Forex Indicators API",
     description="API to calculate Trend, RSI, and EMA for any Forex ticker using yfinance. Designed for Custom GPT Actions.",
     version="1.0.0",
+    servers=[{"url": "https://forexchat.vercel.app/"}]
 )
 
 def format_ticker(symbol: str) -> str:
